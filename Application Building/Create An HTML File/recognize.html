@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./recog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav-container{
+    display: flex;
+    justify-content: end;
+    height: 100px;
+}
+.nav-list{
+    padding-right: 50px;
+    display: flex;
+    width: 20%;
+    justify-content: end;
+    align-items: center;
+}
+.nav-item{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+.nav-item .nav-links {
+    list-style: none;
+}
+.nav-item .nav-links input{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    border: none;
+    background-color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+}
+.heading .sub-div {
+    text-align: center;
+    width: 40%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700; 
+    margin-bottom: 50px; 
+}
+.content-container{
+    display: flex;
+    justify-content: center;
+    height: 400px;
+}
+.content-container .boxs{
+    position: relative;
+    display:flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.content-container .boxs .box1{
+    align-items: center;
+    flex-direction: column;
+    display:flex;
+   width: 40%;
+   background-color: rgba(117, 117, 117, 0.219);
+   border-radius: 20px;
+   position: relative;
+}
+.content-container .boxs .box1 .box1-title{
+    font-family: 'Poppins', sans-serif;
+    margin: 20px;
+}
+.content-container .boxs .box2 .box2-title{
+    font-family: 'Poppins', sans-serif;
+    margin: 17px;
+}
+.content-container .boxs .box2{
+    align-items: center;
+    flex-direction: column;
+    display:flex;
+   width: 40%;
+   background-color: rgba(117, 117, 117, 0.219);
+   border-radius: 20px;
+}
+.content-container .boxs .box1 .btn-1{
+    display: flex;
+    justify-content: center;
+}
+.input-box1{
+    width: 400px;
+    height:100px;
+    position: relative;
+    padding-top: 50px;
+    text-align: center;
+    margin: 30px 0;
+    font-family: 'Poppins', sans-serif;
+}
+.input-box2{
+    padding-top: 30px;
+    text-align: center;
+    width:400px;
+    height:100px;
+    position: relative;
+    margin: 30px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-1 input{
+    border: none;
+    width: 130px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: rgb(16, 197, 61);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.btn-2 input{
+    border: none;
+    margin-top: 10px;
+    width: 130px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: rgb(197, 58, 16);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+    </style>
+</head>
+<body>
+        <div class="nav-container">
+            <div class="nav-list">
+                <ul class="nav-item">
+                    <li class="nav-links home">
+                        <i class="fa-solid fa-house"></i>
+                        <input type="submit" value="Home">
+                         </li>
+                         <form action="/recognize_page" method ="post">
+                    <li class="nav-links"><input type="submit" value="Recognize"></li></form>
+                </ul>
+            </div>
+        </div>
+    <div class="heading">
+        <div class="sub-div">
+            <h1>Handwritten Digit Recognition System</h1>
+        </div>
+    </div>
+    <div class="content-container">
+        <div class="boxs">
+            <div class="box1">
+                
+               <div class="box1-title"><h3>Recognizing Digits from Drawing Images</h3></div> 
+               <div class="input-box1">Draw the digit on the given canva and click predict to recognize the drawn digit </div>
+               <div class="btn-1"><form action="/recognize" method="post"><input type="submit" value="Recognize"></form></div>
+            </div>
+            <div class="box2">
+                <div class="box2-title"><h3>Recognizing Handwritten Digits from Uploaded Document</h3></div>
+                <div class="input-box2">Upload the image containing the handwritten digit and click predict to recognize the digit in the image </div> 
+                <div class="btn-2"><input type="submit" value="Recognize"></div>
+            </div>
+        </form>
+        </div>
+    </div>
+</body>
+</html>
