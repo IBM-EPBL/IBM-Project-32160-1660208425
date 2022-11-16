@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(./bg.jpg);
+    background-size: cover;
+}
+.nav-container{
+    display: flex;
+    justify-content: end;
+    height: 100px;
+}
+.nav-list{
+    padding-right: 50px;
+    display: flex;
+    width: 20%;
+    justify-content: end;
+    align-items: center;
+}
+.nav-item{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+.nav-item .nav-links {
+    list-style: none;
+}
+.nav-item .nav-links input{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    border: none;
+    background-color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+}
+.heading .sub-div {
+    text-align: center;
+    width: 40%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700; 
+    margin-bottom: 50px; 
+}
+.content{
+    display: flex;
+    justify-content: center;
+}
+.des{
+    width: 70%;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.126);
+    border-radius: 30px;    
+}
+.sub-des{
+   font-size: 20px;
+   padding: 70px 0;
+   width: 80%;
+}
+    </style>
+</head>
+<body>
+    
+    <div class="nav-container">
+        <div class="nav-list">
+            <ul class="nav-item">
+                <form action="/" method="post">
+                <li class="nav-links home">
+                    <i class="fa-solid fa-house"></i>
+                    <input type="submit" value="Home"></a>
+                     </li>
+                    </form>
+            <form action="/recognize_page" method="post">
+                <li class="nav-links"><input type="submit" value="Recognize"></input></li>
+            </form>
+            </ul>
+        </div>
+    </div>
+    <div class="heading">
+        <div class="sub-div">
+            <h1>Handwritten Digit Recognition System</h1>
+        </div>
+    </div>
+    <div class="content">
+        <div class="des">
+            <div class="sub-des">
+                Handwritten digit recognition is the ability of a computer to recognize the human handwritten digits from different sources like images, papers, touch screens etc., and classify them into 10 predefined classes(0-9) using Conventional Neural Network(CNN). Digit recognition has many applications like number plate recognition, postal mail sorting, bank cheque processing etc.,
+            </div>
+        </div>
+    </div>
+</body>
+</html>
